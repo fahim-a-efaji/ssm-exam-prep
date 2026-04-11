@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SAFe® Scrum Master (SSM 6.0) Exam Prep — 120 flashcards, 100 practice questions, full study guide. Free and open source.">
+  <title>SAFe SSM 6.0 Exam Prep</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav>
+  <div class="logo">SAFe <span>SSM</span> PREP</div>
+  <button class="nav-btn active" onclick="showPanel('study', this)">📖 Study</button>
+  <button class="nav-btn" onclick="showPanel('flash', this)">🃏 Flashcards</button>
+  <button class="nav-btn" onclick="showPanel('quiz', this)">✏️ Quiz</button>
+  <div class="exam-badge">45Q · 90MIN · 73%</div>
+</nav>
+
+<div class="main">
+
+<!-- ═══════════════════════════════════════════════════
+     STUDY GUIDE
+════════════════════════════════════════════════════ -->
+<div id="panel-study" class="panel active">
+  <h2>Study Guide</h2>
+  <p class="subtitle">All 6 workbook lessons + exam domain key concepts. Click any card to expand.</p>
+
+  <div class="stats-row">
+    <div class="stat-box"><div class="stat-num">45</div><div class="stat-lbl">Exam Questions</div></div>
+    <div class="stat-box"><div class="stat-num">90</div><div class="stat-lbl">Minutes</div></div>
+    <div class="stat-box"><div class="stat-num">73%</div><div class="stat-lbl">Pass Score</div></div>
+    <div class="stat-box"><div class="stat-num">4</div><div class="stat-lbl">Domains</div></div>
+    <div class="stat-box"><div class="stat-num">120</div><div class="stat-lbl">Flashcards</div></div>
+    <div class="stat-box"><div class="stat-num">100</div><div class="stat-lbl">Practice Qs</div></div>
+  </div>
+
+  <!-- LESSON 1 -->
+  <div class="lesson-card">
+    <div class="lesson-header" onclick="tog(this)">
+      <span class="lesson-num">L1</span>
+      <span class="lesson-title">Introducing Scrum in SAFe</span>
+      <span class="lesson-meta">Domain 1 · 22–28%</span>
+      <span class="arr">▶</span>
+    </div>
+    <div class="lesson-body">
+      <div class="cb">
+        <div class="clabel">4 Agile Manifesto Values</div>
+        <ul class="clist">
+          <li><strong>Individuals &amp; interactions</strong> over processes and tools</li>
+          <li><strong>Working software</strong> over comprehensive documentation</li>
+          <li><strong>Customer collaboration</strong> over contract negotiation</li>
+          <li><strong>Responding to change</strong> over following a plan</li>
+        </ul>
+      </div>
+      <div class="cb">
+        <div class="clabel">5 Scrum Values + 3 Pillars</div>
+        <ul class="clist">
+          <li>Values: <strong>Courage · Commitment · Focus · Respect · Openness</strong></li>
+          <li>Pillars: <strong>Transparency · Inspection · Adaptation</strong></li>
+        </ul>
+      </div>
+      <div class="cb">
+        <div class="clabel">Scrum → SAFe Terminology Map</div>
+        <div class="tw"><table>
+          <tr><th>Scrum Term</th><th>SAFe Term</th></tr>
+          <tr><td>Sprint</td><td>Iteration</td></tr>
+          <tr><td>Sprint Planning</td><td>Iteration Planning</td></tr>
+          <tr><td>Sprint Review</td><td>Iteration Review</td></tr>
+          <tr><td>Sprint Retrospective</td><td>Iteration Retrospective</td></tr>
+          <tr><td>Daily Scrum</td><td>Team Sync</td></tr>
+          <tr><td>Sprint Goals</td><td>Iteration Goals</td></tr>
+          <tr><td>Increment</td><td>Team Increment</td></tr>
+          <tr><td>The Scrum Team</td><td>Agile Team</td></tr>
+        </table></div>
+      </div>
+      <div class="cb">
+        <div class="clabel">Agile Team Basics</div>
+        <ul class="clist">
+          <li>Cross-functional, self-organizing, <strong>≤10 members</strong></li>
+          <li>Two specialty roles: <strong>Scrum Master</strong> and <strong>Product Owner</strong></li>
+          <li>Iterations: same length, back-to-back, typically <strong>2 weeks</strong></li>
+          <li>Goal: deliver working, tested functionality at end of each iteration</li>
+        </ul>
+      </div>
+      <div class="cb">
+        <div class="clabel">5 Built-in Quality XP Practices</div>
+        <ul class="clist">
+          <li>Continuous Integration · Test-First (TDD/BDD) · Refactoring · Pair Work · Collective Ownership</li>
+        </ul>
+      </div>
+      <div class="cb">
+        <div class="clabel">4 SAFe Core Values</div>
+        <ul class="clist">
+          <li><strong>Alignment · Built-in Quality · Transparency · Program Execution</strong></li>
+        </ul>
+      </div>
+      <div class="cb">
+        <div class="clabel">Work Item Hierarchy</div>
+        <ul class="clist">
+          <li><strong>Stories</strong> — fit in 1 iteration (days)</li>
+          <li><strong>Features</strong> — fit in 1 PI within 1 ART (weeks); have benefit hypothesis + acceptance criteria</li>
+          <li><strong>Epics</strong> — span multiple PIs and ARTs (months)</li>
+        </ul>
+      </div>
+      <div class="alert ab">⚡ Key differentiators from Waterfall: <strong>Incremental delivery of value + Fast Feedback</strong> (not Architectural Runway)</div>
+      <div class="alert aa">⚠️ Lean-Agile Mindset = <strong>Lean Thinking + Embracing Agility</strong> — NOT Systems Thinking</div>
+    </div>
+  </div>
+
+  <!-- LESSON 2 -->
+  <div class="lesson-card">
+    <div class="lesson-header" onclick="tog(this)">
+      <span class="lesson-num">L2</span>
+      <span class="lesson-title">The Scrum Master / Team Coach Role</span>
+      <span class="lesson-meta">Domain 2 · 26–30%</span>
+      <span class="arr">▶</span>
+    </div>
+    <div class="lesson-body">
+      <div class="cb">
+        <div class="clabel">SM is Above All Else: A Servant Leader</div>
+        <ul class="clist">
+          <li>Uses <strong>persuasion, not authority</strong> to influence</li>
+          <li>Listens to and supports team members in problem identification and decision-making</li>
+          <li>Thinks beyond day-to-day activities</li>
+          <li>Seeks to help without diminishing the commitment of others</li>
+          <li>Encourages personal development of each individual</li>
+        </ul>
+      </div>
+      <div class="cb">
+        <div class="clabel">5 SM Responsibilities</div>
+        <ul class="clist">
+          <li>1. Facilitate PI Planning</li>
+          <li>2. Support iterations (all events)</li>
+          <li>3. Improve flow</li>
+          <li>4. Build a high-performing team</li>
+          <li>5. Improve ART performance</li>
+        </ul>
+      </div>
+      <div class="cb">
+        <div class="clabel">Coaching: Move AWAY From → Move TOWARD</div>
+        <div class="tw"><table>
+          <tr><th>Move Away From (Old)</th><th>Move Toward (New)</th></tr>
+          <tr><td>Coordinating individual contributions</td><td>Coaching the whole team to collaborate</td></tr>
+          <tr><td>Acting as subject matter expert</td><td>Being a facilitator</td></tr>
+          <tr><td>Driving toward specific outcomes</td><td>Invested in team's overall performance</td></tr>
+          <tr><td>Knowing the answer</td><td>Letting the team find their own way</td></tr>
+          <tr><td>Directing</td><td>Guiding</td></tr>
+          <tr><td>Talking about deadlines &amp; technical options</td><td>Focusing on business value delivery</td></tr>
+          <tr><td>Fixing problems rather than helping others fix them</td><td>Facilitating team problem-solving</td></tr>
+        </table></div>
+      </div>
+      <div class="cb">
+        <div class="clabel">SM vs PO</div>
+        <div class="tw"><table>
+          <tr><th>Scrum Master</th><th>Product Owner</th></tr>
+          <tr><td>Facilitates events</td><td>Connects with customer</td></tr>
+          <tr><td>Removes impediments</td><td>Manages &amp; prioritizes team backlog</td></tr>
+          <tr><td>Coaches team on Agile practices</td><td>Contributes to vision &amp; roadmap</td></tr>
+          <tr><td>Improves ART performance</td><td>Gets &amp; applies fast feedback</td></tr>
+        </table></div>
+      </div>
+      <div class="cb">
+        <div class="clabel">Tuckman's Team Development Stages</div>
+        <ul class="clist">
+          <li><strong>Forming</strong> → team comes together, roles unclear</li>
+          <li><strong>Storming</strong> → conflict emerges (normal and healthy!)</li>
+          <li><strong>Norming</strong> → members stop focusing on own goals, develop better ways of working together</li>
+          <li><strong>Performing</strong> → team is highly productive and self-managing</li>
+        </ul>
+      </div>
+      <div class="cb">
+        <div class="clabel">Lencioni's 5 Dysfunctions (base → top)</div>
+        <ul class="clist">
+          <li><strong>1. Absence of Trust</strong> → SAFe addresses: Scrum creates safe environment</li>
+          <li><strong>2. Fear of Conflict</strong> → SAFe addresses: Healthy conflict enabled in Scrum</li>
+          <li><strong>3. Lack of Commitment</strong> → SAFe addresses: Shared iteration &amp; PI commitments</li>
+          <li><strong>4. Avoidance of Accountability</strong> → SAFe addresses: Peer pressure &amp; results review</li>
+          <li><strong>5. Inattention to Results</strong> → SAFe addresses: Iteration Reviews &amp; Retrospectives</li>
+        </ul>
+      </div>
+      <div class="cb">
+        <div class="clabel">High-Performing Team Attributes</div>
+        <ul class="clist">
+          <li>Self-organizing · Aligned and collaborative · Open and clear communication</li>
+          <li>Safe atmosphere to take risks · Value diversity · Mutual trust</li>
+          <li>Effective decision-making · Effective timely feedback · Understand work's impact</li>
+        </ul>
+      </div>
+      <div class="cb">
+        <div class="clabel">Conflict Resolution Steps</div>
+        <ul class="clist">
+          <li>1. Meet with the conflicting parties</li>
+          <li>2. Identify exactly what each party wants</li>
+          <li>3. Identify why each party needs it</li>
+          <li>4. Obtain agreement that the common goal is correct</li>
+          <li>5. Review and challenge assumptions</li>
+          <li>6. Find what common goal ties these reasons together</li>
+        </ul>
+      </div>
+      <div class="cb">
+        <div class="clabel">ART Sync Events (SM attends, RTE facilitates)</div>
+        <div class="tw"><table>
+          <tr><th>Coach Sync</th><th>PO Sync</th></tr>
+          <tr><td>SM/Team Coach focused</td><td>PO focused</td></tr>
+          <tr><td>Risks, dependencies, impediments</td><td>Progress, scope, priority adjustments</td></tr>
+          <tr><td>Facilitated by RTE</td><td>Facilitated by RTE or PM</td></tr>
+        </table></div>
+      </div>
+      <div class="alert aa">⚠️ #1 Anti-pattern: SM taking the technical role instead of the facilitator/coach role</div>
+      <div class="alert ab">⚡ SM escalates people problems ONLY after coaching and internal processes fail</div>
+    </div>
+  </div>
+
+  <!-- LESSON 3 -->
+  <div class="lesson-card">
+    <div class="lesson-header" onclick="tog(this)">
+      <span class="lesson-num">L3</span>
+      <span class="lesson-title">PI Planning (Experiencing PI Planning)</span>
+      <span class="lesson-meta">Domain 4 · Heavily tested</span>
+      <span class="arr">▶</span>
+    </div>
+    <div class="lesson-body">
+      <div class="cb">
+        <div class="clabel">PI Planning at a Glance</div>
+        <ul class="clist">
+          <li>2-day event · Facilitated by <strong>RTE</strong> · All ART teams attend in person</li>
+          <li>Held every PI (~8–12 weeks; 10 weeks typical)</li>
+          <li>Product Management owns feature priorities; Development teams own story planning</li>
+          <li>"The heartbeat of the ART" — most critical alignment event</li>
+        </ul>
+      </div>
+      <div class="cb">
+        <div class="clabel">Inputs vs Outputs</div>
+        <div class="tw"><table>
+          <tr><th>Inputs</th><th>Outputs</th></tr>
+          <tr><td>Vision</td><td>Committed PI Objectives (per team)</td></tr>
+          <tr><td>Top-10 Features list</td><td>ART Planning Board</td></tr>
+          <tr><td>Program Roadmap</td><td>Identified &amp; ROAMed risks</td></tr>
+          <tr><td>Architecture Vision</td><td>Confidence vote result</td></tr>
+        </table></div>
+      </div>
+      <div class="cb">
+        <div class="clabel">Day 1 vs Day 2</div>
+        <div class="tw"><table>
+          <tr><th>Day 1</th><th>Day 2</th></tr>
+          <tr><td>Business context presentation</td><td>Draft plan reviews (all teams present)</td></tr>
+          <tr><td>Product/Solution Vision</td><td>Risk ROAMing</td></tr>
+          <tr><td>Architecture Vision</td><td>Final plan review</td></tr>
+          <tr><td>Team breakouts &amp; draft plans</td><td>Confidence vote (Fist of Five)</td></tr>
+          <tr><td>Management review (mid-day)</td><td>PI Planning Retrospective</td></tr>
+        </table></div>
+      </div>
+      <div class="cb">
+        <div class="clabel">ROAM Risk Categories</div>
+        <ul class="clist">
+          <li><strong>R — Resolved:</strong> addressed; no longer a concern</li>
+          <li><strong>O — Owned:</strong> someone has taken responsibility for the risk</li>
+          <li><strong>A — Accepted:</strong> nothing more can be done; may compromise the release</li>
+          <li><strong>M — Mitigated:</strong> team has a plan to reduce or eliminate the threat</li>
+        </ul>
+      </div>
+      <div class="cb">
+        <div class="clabel">PI Objectives: Committed vs Stretch</div>
+        <ul class="clist">
+          <li><strong>Committed:</strong> firm delivery commitments; counted in ART predictability</li>
+          <li><strong>Stretch (Uncommitted):</strong> desired but no firm commitment; planned BV = 0</li>
+          <li>Stretch objectives let teams signal capacity without distorting predictability metrics</li>
+        </ul>
+      </div>
+      <div class="cb">
+        <div class="clabel">Three Cs of a User Story</div>
+        <ul class="clist">
+          <li><strong>Card</strong> — written representation in tool or on card</li>
+          <li><strong>Conversation</strong> — details come from discussion with PO</li>
+          <li><strong>Confirmation</strong> — acceptance criteria confirms story's correctness</li>
+        </ul>
+      </div>
+      <div class="alert aa">⚠️ Anti-pattern: detailed plan becomes the goal rather than alignment; pressuring teams to overcommit</div>
+      <div class="alert ab">⚡ Fist of Five: 1–2 = stop and resolve concerns; 3 = concerns but will support; 4–5 = committed</div>
+    </div>
+  </div>
+
+  <!-- LESSON 4 -->
+  <div class="lesson-card">
+    <div class="lesson-header" onclick="tog(this)">
+      <span class="lesson-num">L4</span>
+      <span class="lesson-title">Facilitating Iteration Execution</span>
+      <span class="lesson-meta">Domain 3 · 17–21%</span>
+      <span class="arr">▶</span>
+    </div>
+    <div class="lesson-body">
+      <div class="cb">
+        <div class="clabel">Iteration Events — Timeboxes, Facilitators &amp; Key Facts</div>
+        <div class="tw"><table>
+          <tr><th>Event</th><th>Timebox</th><th>Facilitator</th><th>Key Rule</th></tr>
+          <tr><td>Iteration Planning</td><td>≤4 hrs</td><td>SM or PO</td><td>First step = establish capacity</td></tr>
+          <tr><td>Team Sync (Daily)</td><td>≤15 min</td><td>SM or PO</td><td>3 questions + meet-after board</td></tr>
+          <tr><td>Backlog Refinement</td><td>1–2 hrs</td><td>SM or PO</td><td>Prepares ready backlog for planning</td></tr>
+          <tr><td>Iteration Review</td><td>1–2 hrs</td><td>SM / PO leads</td><td>Demo working software only; no slides</td></tr>
+          <tr><td>Iteration Retrospective</td><td>≤1 hr</td><td>SM ONLY</td><td>No outside stakeholders or management</td></tr>
+        </table></div>
+      </div>
+      <div class="cb">
+        <div class="clabel">Iteration Planning Agenda (5 Steps)</div>
+        <ul class="clist">
+          <li>1. Establish capacity &amp; confirm capacity allocation guidelines</li>
+          <li>2. Story analysis and normalized estimation</li>
+          <li>3. Identify tasks for each story (optional — tasking)</li>
+          <li>4. Draft iteration goals</li>
+          <li>5. Commit to iteration goals</li>
+        </ul>
+      </div>
+      <div class="cb">
+        <div class="clabel">3 Team Sync Questions</div>
+        <ul class="clist">
+          <li>What did I do <strong>yesterday</strong> to advance iteration goals?</li>
+          <li>What will I do <strong>today</strong> to advance iteration goals?</li>
+          <li>Are there <strong>impediments</strong> preventing the team from meeting goals?</li>
+        </ul>
+      </div>
+      <div class="cb">
+        <div class="clabel">Velocity Rules</div>
+        <ul class="clist">
+          <li>Only <strong>fully completed</strong> stories count — zero partial credit</li>
+          <li>Example: A(8) done + B(1) done + C(5) at 50% → Velocity = <strong>9</strong></li>
+          <li>Use historical velocity to forecast future iterations</li>
+        </ul>
+      </div>
+      <div class="cb">
+        <div class="clabel">8 Flow Accelerators</div>
+        <ul class="clist">
+          <li>1. Visualize &amp; limit WIP · 2. Address bottlenecks · 3. Minimize handoffs &amp; dependencies</li>
+          <li>4. Get faster feedback · 5. Work in smaller batches · 6. Reduce queue lengths</li>
+          <li>7. Optimize time "in the zone" · 8. Remediate legacy policies &amp; practices</li>
+        </ul>
+      </div>
+      <div class="cb">
+        <div class="clabel">CALMR — SAFe's DevOps Approach</div>
+        <ul class="clist">
+          <li><strong>C</strong> — Culture (shared responsibility for dev, deployment, ops)</li>
+          <li><strong>A</strong> — Automation (automate the Continuous Delivery Pipeline)</li>
+          <li><strong>L</strong> — Lean flow (keep batch sizes small, limit WIP, extreme visibility)</li>
+          <li><strong>M</strong> — Measurement (full-stack telemetry through the pipeline)</li>
+          <li><strong>R</strong> — Recovery (fast fix-forward, fast reversion, low-risk releases)</li>
+        </ul>
+      </div>
+      <div class="cb">
+        <div class="clabel">3 Flow Metrics</div>
+        <ul class="clist">
+          <li><strong>Flow Velocity:</strong> backlog items (story points) completed per iteration</li>
+          <li><strong>Flow Load:</strong> items currently in the system (visualized via Cumulative Flow Diagram)</li>
+          <li><strong>Flow Distribution:</strong> types of work (stories/enablers/maintenance) over time</li>
+        </ul>
+      </div>
+      <div class="alert aa">⚠️ Retro anti-pattern: inviting management or outside stakeholders</div>
+      <div class="alert ab">⚡ Improvement items from Retro → enter the <strong>Team Backlog</strong> as actionable stories</div>
+    </div>
+  </div>
+
+  <!-- LESSON 5 -->
+  <div class="lesson-card">
+    <div class="lesson-header" onclick="tog(this)">
+      <span class="lesson-num">L5</span>
+      <span class="lesson-title">Finishing the PI (IP Iteration &amp; I&amp;A)</span>
+      <span class="lesson-meta">Domain 4 · ART Events</span>
+      <span class="arr">▶</span>
+    </div>
+    <div class="lesson-body">
+      <div class="cb">
+        <div class="clabel">IP Iteration — 3 Purposes + Anti-Pattern</div>
+        <ul class="clist">
+          <li><strong>Innovation:</strong> hackathons, spikes, supplier showcases, skill development, infrastructure improvements</li>
+          <li><strong>Planning:</strong> PI Planning preparation; hosts PI Planning and I&amp;A events</li>
+          <li><strong>Buffer:</strong> estimating guard band ensuring cadence-based delivery predictability</li>
+          <li>⛔ Anti-pattern: planning regular feature work for IP during PI Planning</li>
+        </ul>
+      </div>
+      <div class="cb">
+        <div class="clabel">Consequences of NOT Having IP Iteration</div>
+        <ul class="clist">
+          <li>No delivery buffer → unpredictability · Little innovation ("tyranny of the urgent")</li>
+          <li>Technical debt grows uncontrollably · People burn out</li>
+          <li>No time for teams to plan, demo, or improve together</li>
+        </ul>
+      </div>
+      <div class="cb">
+        <div class="clabel">Inspect &amp; Adapt — 3 Parts (3–4 hrs; Teams + Stakeholders)</div>
+        <ul class="clist">
+          <li><strong>1. PI System Demo:</strong> demonstrate current solution state; Business Owners must attend</li>
+          <li><strong>2. Quantitative &amp; Qualitative Measurement:</strong> ART predictability measure; target 80–100%</li>
+          <li><strong>3. Problem-Solving Workshop:</strong> root-cause analysis → improvement Features</li>
+        </ul>
+      </div>
+      <div class="cb">
+        <div class="clabel">Problem-Solving Workshop — 6 Steps</div>
+        <ul class="clist">
+          <li>1. <strong>Agree on the problem to solve</strong> (ALWAYS first)</li>
+          <li>2. Apply root cause analysis (5 Whys / fishbone diagram)</li>
+          <li>3. Identify the biggest root cause</li>
+          <li>4. Restate the new problem for the biggest root cause</li>
+          <li>5. Brainstorm solutions</li>
+          <li>6. Identify improvement backlog items</li>
+        </ul>
+      </div>
+      <div class="cb">
+        <div class="clabel">ART Predictability Measure</div>
+        <ul class="clist">
+          <li>Compares <strong>actual</strong> business value achieved vs. <strong>planned</strong></li>
+          <li>Target: <strong>80–100%</strong> = effective process control</li>
+          <li>Stretch objectives have planned BV = 0 (doesn't distort the measure)</li>
+          <li>Teams self-assess with Business Owners at the PI System Demo</li>
+        </ul>
+      </div>
+      <div class="alert ab">⚡ Spikes = exploration enabler stories to reduce technical risk or clarify a requirement</div>
+      <div class="alert ar">❌ I&amp;A anti-pattern: no actionable improvement Features created from the workshop</div>
+    </div>
+  </div>
+
+  <!-- LESSON 6 -->
+  <div class="lesson-card">
+    <div class="lesson-header" onclick="tog(this)">
+      <span class="lesson-num">L6</span>
+      <span class="lesson-title">AI for Scrum Masters + Critical Exam Terms</span>
+      <span class="lesson-meta">Lesson 6 + Glossary</span>
+      <span class="arr">▶</span>
+    </div>
+    <div class="lesson-body">
+      <div class="cb">
+        <div class="clabel">Responsible AI for Scrum Masters</div>
+        <ul class="clist">
+          <li>AI <strong>augments</strong> — does NOT replace — the SM's coaching role</li>
+          <li>Key risks: Hallucinations · Bias · Data privacy</li>
+          <li>Always verify AI output with human judgment</li>
+          <li>SM remains accountable; AI is a tool, not a decision-maker</li>
+        </ul>
+      </div>
+      <div class="cb">
+        <div class="clabel">Critical Glossary</div>
+        <div class="tw"><table>
+          <tr><th>Term</th><th>Definition</th></tr>
+          <tr><td>Spike</td><td>Exploration enabler story to reduce technical risk or clarify a requirement</td></tr>
+          <tr><td>Enabler</td><td>Work item extending Architectural Runway (Infrastructure, Exploration, Architecture, Compliance)</td></tr>
+          <tr><td>Architectural Runway</td><td>Existing infrastructure for near-term features without redesign</td></tr>
+          <tr><td>WSJF</td><td>Weighted Shortest Job First — prioritizes features by economic value</td></tr>
+          <tr><td>DoD</td><td>Definition of Done — shared criteria for "complete"</td></tr>
+          <tr><td>NFR</td><td>Non-Functional Requirement — system qualities (performance, security, scalability)</td></tr>
+          <tr><td>System Demo</td><td>Cross-team integration demo each iteration; RTE facilitates</td></tr>
+          <tr><td>Coach Sync</td><td>ART Scrum of Scrums; RTE facilitates; SM attends</td></tr>
+          <tr><td>PO Sync</td><td>Cross-team PO alignment; RTE/PM facilitates</td></tr>
+          <tr><td>BDD</td><td>Behavior-Driven Development — Given/When/Then format for acceptance criteria</td></tr>
+          <tr><td>Feature Toggle</td><td>Enables dark launches and controlled rollouts without code changes</td></tr>
+          <tr><td>ART</td><td>Agile Release Train — team of Agile teams (50–125 people) on PI cadence</td></tr>
+        </table></div>
+      </div>
+      <div class="alert ag">✅ Stories: 1 iteration · Features: 1 PI · Epics: multiple PIs</div>
+      <div class="alert ab">⚡ House of Lean pillars: Value · Respect for People &amp; Culture · Flow · Innovation · Relentless Improvement (Leadership = foundation)</div>
+    </div>
+  </div>
+
+</div><!-- /study panel -->
+
+<!-- ═══════════════════════════════════════════════════
+     FLASHCARDS
+════════════════════════════════════════════════════ -->
+<div id="panel-flash" class="panel">
+  <h2>Flashcards</h2>
+  <p class="subtitle">120 cards covering every exam domain. Filter by topic, click to flip.</p>
+
+  <div class="fc-top">
+    <select class="fsel" id="fc-filter" onchange="filterCards()">
+      <option value="all">All Topics (120)</option>
+      <option value="agile">Agile Foundations (15)</option>
+      <option value="roles">Roles &amp; Responsibilities (20)</option>
+      <option value="events">Events &amp; Timeboxes (20)</option>
+      <option value="pi">PI Planning &amp; ART (25)</option>
+      <option value="flow">Flow, Metrics &amp; DevOps (15)</option>
+      <option value="terms">Key Terms &amp; Definitions (15)</option>
+      <option value="anti">Anti-Patterns (10)</option>
+    </select>
+    <span class="fc-counter" id="fc-counter">Card 1 of 120</span>
+  </div>
+
+  <div class="fc-progress">
+    <div class="fc-progress-bar" id="fc-pbar" style="width: 0%"></div>
+  </div>
+
+  <div class="fc-scene" onclick="flipCard()">
+    <div class="fc-inner" id="fc-inner">
+      <div class="fc-face">
+        <div class="fc-cat" id="fc-cat-front"></div>
+        <div class="fc-tag">Question</div>
+        <div class="fc-q" id="fc-q">Loading...</div>
+        <div class="fc-hint">tap to reveal answer</div>
+      </div>
+      <div class="fc-face fc-back">
+        <div class="fc-cat" id="fc-cat-back"></div>
+        <div class="fc-tag">Answer</div>
+        <div class="fc-a" id="fc-a"></div>
+        <div class="fc-hint">tap to flip back</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="fc-nav">
+    <button class="fcb" onclick="prevCard()">← Prev</button>
+    <button class="fcb" onclick="shuffleCards()">🔀 Shuffle</button>
+    <button class="fcb p" onclick="nextCard()">Next →</button>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════
+     QUIZ
+════════════════════════════════════════════════════ -->
+<div id="panel-quiz" class="panel">
+  <h2>Practice Quiz</h2>
+  <p class="subtitle">100 real-style exam questions. Choose a mode and start.</p>
+
+  <div class="quiz-mode-btns">
+    <button class="qmode-btn active" onclick="setMode('full', this)">Full Test (45 random)</button>
+    <button class="qmode-btn" onclick="setMode('d1', this)">Domain 1 — Scrum in SAFe</button>
+    <button class="qmode-btn" onclick="setMode('d2', this)">Domain 2 — SM Role</button>
+    <button class="qmode-btn" onclick="setMode('d3', this)">Domain 3 — Team Events</button>
+    <button class="qmode-btn" onclick="setMode('d4', this)">Domain 4 — ART Events</button>
+  </div>
+
+  <div id="quiz-area">
+    <div class="qhdr">
+      <div class="qprog"><div class="qpbar" id="q-bar" style="width: 0%"></div></div>
+      <div class="qcnt" id="q-count">0 / 0</div>
+      <div class="qscore-live" id="q-live">0 correct</div>
+    </div>
+
+    <div id="q-box">
+      <div class="qcard">
+        <div class="qdomain" id="q-domain"></div>
+        <div class="qtext" id="q-text"></div>
+        <div class="qopts" id="q-opts"></div>
+        <div class="qexp" id="q-exp"></div>
+        <div class="qact">
+          <button class="qskip" id="q-skip" onclick="nextQuestion()">Skip →</button>
+          <button class="qnxt" id="q-next" onclick="nextQuestion()">Next Question →</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="result" id="q-result">
+      <div class="rs" id="r-score"></div>
+      <div class="rl" id="r-total"></div>
+      <div class="rpct" id="r-pct"></div>
+      <div class="rpass" id="r-pass"></div>
+      <div class="rbar-wrap"><div class="rbar" id="r-bar"></div></div>
+      <div class="rmsg" id="r-msg"></div>
+      <div class="rsub" id="r-sub"></div>
+      <div class="domain-breakdown" id="r-breakdown"></div>
+      <br>
+      <button class="rbtn" onclick="restartQuiz()">Try Again</button>
+    </div>
+  </div>
+</div>
+
+</div><!-- /main -->
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
