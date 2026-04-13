@@ -1,7 +1,8 @@
 # SAFe® Scrum Master (SSM 6.0) Exam Prep
 
+> A free, open-source web app — includes 19 confirmed questions from a real SSM 6.0 exam (April 2026, scored 91%).
 > A free, open-source web app to help you pass the SAFe® Scrum Master certification exam.  
-> **120 flashcards · 100 practice questions · Full study guide — all from the official SSM 6.0 workbook.**
+> **120 flashcards · 119 practice questions · Full study guide — all from the official SSM 6.0 workbook.**
 
 [![GitHub Pages](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-blue?style=flat-square)](https://yourusername.github.io/ssm-exam-prep)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
